@@ -1,0 +1,152 @@
+body {
+    font-family: 'Teko', sans-serif;
+    font-size: 16px;
+
+    width: 60vw;
+    margin: auto;
+
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+.header-update {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-update button {
+    width: 60%;
+    height: 50px;
+
+    font-family: 'Teko', sans-serif;
+    font-size: 1.2rem;
+
+    background: lightblue;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+.current-city, .favorites {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 30px;
+}
+
+.current-city {
+    margin-bottom: 3vw;
+}
+
+h2 {
+    font-size: 2rem;
+
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.current-city-content {
+    display: flex;
+    align-items: center;
+}
+
+.current-city-content img {
+    width: 180px;
+    height: 180px;
+
+    margin-right: 50px;
+}
+
+.current-city-content p {
+    font-size: 4.3rem;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+li {
+    background: lightblue;
+
+    display: flex;
+    justify-content: space-between;
+
+    border-radius: 10px;
+
+    padding: 0 5px 0 5px;
+    margin-bottom: 5px;
+}
+
+.new-city {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.favorites button {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+
+    border: none;
+    background: lightblue;
+    cursor: pointer;
+
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.new-city input {
+    margin-right: 20px;
+    width: 200px;
+    height: 50px;
+
+    padding-left: 10px;
+
+    border: 1px solid lightgrey;
+}
+
+input:focus {
+    outline: none;
+}
+
+.city .city-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.city .city-header img {
+    width: 50px;
+    height: 50px;
+}
+
+.city .city-header p {
+    font-size: 1.8rem;
+    margin: 0;
+}

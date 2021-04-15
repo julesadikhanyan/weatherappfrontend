@@ -1,0 +1,83 @@
+@media (max-width: 1200px) {
+    body {
+        width: 80vw;
+    }
+
+    .header h1 {
+        font-size: 1.8rem;
+    }
+
+    .current-city .city-header img {
+        width: 130px;
+        height: 130px;
+    }
+
+    .current-city .city-header p {
+        font-size: 3.5rem;
+    }
+
+    .favorites button {
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+
+        font-size: 1rem;
+    }
+    h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px){
+    .header-update button {
+        width: 50px;
+
+        font-size: 0;
+
+        background-image: url("../img/update.svg");
+    }
+
+    .header h1 {
+        font-size: 1.3rem;
+    }
+
+    .current-city, .favorites {
+        grid-template-columns: 1fr;
+    }
+
+    .new-city {
+        justify-content: space-between;
+    }
+
+    .new-city input {
+        width: 60vw;
+    }
+
+    .current-city .city-header img {
+        width: 180px;
+        height: 180px;
+    }
+
+    .current-city .city-header p {
+        font-size: 3.8em;
+    }
+}
+
+@media (max-width: 400px){
+    .current-city .city-header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .current-city .city-header p {
+        font-size: 3rem;
+    }
+
+    .new-city input {
+        width: 60vw;
+    }
+
+    .city .city-header p {
+        font-size: 1.5rem;
+    }
+}

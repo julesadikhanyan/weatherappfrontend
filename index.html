@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <title>Weather Forecast</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/desktop.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="js/onload.js"></script>
+    <script src="js/geolocation.js"></script>
+    <script src="js/fetch.js"></script>
+    <script src="js/print.js"></script>
+    <script src="js/update.js"></script>
+    <script src="js/add.js"></script>
+    <script src="js/storage.js"></script>
+    <script src="js/delete.js"></script>
+</head>
+<body>
+<header class="header">
+    <h1>Weather Forecast</h1>
+    <div class="header-update">
+        <button onclick="updateGeolocation()">Update geolocation</button>
+    </div>
+</header>
+<main>
+    <section class="current-city">
+        <div class="city-header">
+            <h2 class="city-name">Loading...</h2>
+            <div class="current-city-content">
+                <img src="img/update.svg" alt="update">
+                <p></p>
+            </div>
+        </div>
+        <ul>
+            <li>
+                <p>Feels like</p>
+                <p class="feels-like"></p>
+            </li>
+            <li>
+                <p>Wind speed</p>
+                <p class="wind-speed"></p>
+            </li>
+            <li>
+                <p>Humidity</p>
+                <p class="humidity"></p>
+            </li>
+            <li>
+                <p>Pressure</p>
+                <p class="pressure"></p>
+            </li>
+            <li>
+                <p>Coords</p>
+                <p class="coords"></p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="favorites">
+        <h2>Favorites</h2>
+        <form class="new-city" onsubmit="return false;">
+            <label>
+                <input type="text" placeholder="Enter city name...">
+            </label>
+            <button onclick="addCity()">+</button>
+        </form>
+    </section>
+</main>
+<template class="favorites-template">
+    <section class="city">
+        <div class="city-header">
+            <h3 class="city-name">Loading...</h3>
+            <img src="img/update.svg" alt="update">
+            <p></p>
+            <button onclick="deleteCity(this)">×</button>
+        </div>
+        <ul class="city-list">
+            <li>
+                <p>Feels like</p>
+                <p class="feels-like"></p>
+            </li>
+            <li>
+                <p>Wind speed</p>
+                <p class="wind-speed"></p>
+            </li>
+            <li>
+                <p>Humidity</p>
+                <p class="humidity"></p>
+            </li>
+            <li>
+                <p>Pressure</p>
+                <p class="pressure"></p>
+            </li>
+            <li>
+                <p>Coords</p>
+                <p class="coords"></p>
+            </li>
+        </ul>
+    </section>
+</template>
+</body>
+</html>

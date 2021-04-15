@@ -1,0 +1,4 @@
+function updateGeolocation() {
+    printLoading();
+    getCurrentPosition();
+}
