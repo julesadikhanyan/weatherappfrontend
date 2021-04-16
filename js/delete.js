@@ -7,7 +7,5 @@ function deleteCity(object) {
         alert(e);
     }
 
-    console.log(object.parentElement.querySelector("h3").textContent);
-
     fetchDeleteCity(object.parentElement.querySelector("h3").textContent).then(onSuccess).catch(onFail)
 }

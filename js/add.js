@@ -9,9 +9,6 @@ async function addCity() {
                 city.remove();
                 return;
             }
-            console.log('add city');
-            console.log(data);
-            console.log(city);
 
             printFavoriteCity(data, city);
         }
@@ -24,6 +21,6 @@ async function addCity() {
 
         fetchAddCity(input).then(onSuccess).catch(onFail);
 
-        document.querySelector('input').value = "";
+        document.querySelector('input').value = '';
     }
 }

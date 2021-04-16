@@ -1,8 +1,5 @@
-let favorites = [];
-
 window.onload = function () {
     getCurrentPosition();
-    console.log(serverCoords);
 
     let onSuccess = (data) => {
         for (let name of data.favoriteCities) {

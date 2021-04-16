@@ -4,7 +4,6 @@ function printCurrentCity(data) {
 }
 
 function printFavoriteCity(data, city) {
-
     printCity(city, data);
 }
 

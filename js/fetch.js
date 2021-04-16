@@ -6,7 +6,6 @@ const serverFav = `${server}/favorites`;
 async function fetchWeatherByCoords(latitude, longitude) {
     try {
         let response = await fetch(`${serverCoords}?lat=${latitude}&lon=${longitude}`);
-        console.log(response);
         return response.json();
     } catch (e) {
         console.log(e);
@@ -16,15 +15,6 @@ async function fetchWeatherByCoords(latitude, longitude) {
 async function fetchWeatherByName(name) {
     try {
         let response = await fetch(`${serverName}?q=${name}`);
-        return response.json();
-    } catch (e) {
-        console.log(e);
-    }
-}
-
-async function fetchWeatherByID(id) {
-    try {
-        let response = await fetch(`${url}id=${id}`);
         return response.json();
     } catch (e) {
         console.log(e);
